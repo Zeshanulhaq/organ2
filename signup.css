@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+  }
+  
+  .container {
+    width: 40%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+  }
+  
+  form {
+    border: 1px solid gray;
+    padding: 60px;
+    background-color: #fff;
+    height: 400px;
+    border-radius: 30px;
+    
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 470px;
+    max-width: 600px;
+    text-align: center;
+    color: black;
+    padding:10px;
+
+
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 92%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: -23px;
+
+  }
+
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background:linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+    color:black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #680657;
+  }
+  
+  p {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .bloodgroup{
+    padding: 10px;
+  }
+  

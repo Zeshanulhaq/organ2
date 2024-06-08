@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style_login.css">
+    <!-- function login() {
+        console.log("Login button clicked!");
+    } -->
+</head>
+<body>
+
+<div id="main-container">
+    <div id="image-container">
+        <img src="./img/Rectangle 30.jpg" alt="Side Image">
+        <h1>Login Page</h1>
+    </div>
+    <div id="login-form-container">
+        <h1>Login Page</h1>
+        <form action="" method="POST">
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname required">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="button" class="btn" onclick="login()"><b>Login</b></button>
+           
+        </form>
+        <div>
+         
+          <button class="btn example">Register Here</button>
+          <div class="modal">
+            <div class="modal-content">
+              <h3>Click Here to Register</h3>
+              <span class="close-button">&times;</span>
+              <a href="donor.html" target="_blank">Donor Registration</a><br>
+              <a href="patient.html" target="_blank">Patient Registration</a><br>
+              <a href="Hcp.html" target="_blank">Healthcare Registration</a><br>
+              <a href="donorpatient.html" target="_blank">Donor and Patient Registration</a><br>
+              <a href="registration3.html" target="_blank">Donor, Patient, and Healthcare Registration</a><br>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div id="registration-forms" style="display: none;">
+             Placeholder for registration form links -->
+            <!-- Replace # with the actual paths to your registration form files -->
+   
+        </div> 
+    </div>
+</div>   
+    <script>
+     function login() {
+        console.log("Login button clicked!");
+    }
+ 
+     let modal = document.querySelector(".modal");
+      let trigger = document.querySelector(".example");
+      let closeButton = document.querySelector(".close-button");
+      function toggleModal() {
+        modal.classList.toggle("show-modal");
+      }
+      function windowOnClick(event) {
+        if(event.target === modal) {
+          toggleModal();
+        }
+      }
+      trigger.addEventListener("click", toggleModal);
+      closeButton.addEventListener("click", toggleModal);
+      window.addEventListener("click", windowOnClick);
+    </script>
+ </body>
+ </html>

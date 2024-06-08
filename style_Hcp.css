@@ -1,0 +1,96 @@
+/* style_Hcp.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.container header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input box styles */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Gender box styles */
+.gender-box {
+    margin-bottom: 20px;
+}
+
+.gender-box h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gender-option {
+    display: flex;
+}
+
+.gender-option .gender {
+    margin-right: 20px;
+}
+
+.gender-option .gender label {
+    margin-left: 5px;
+}
+
+/* Button styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f89ce1;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3b7d8;
+}
+.fa-home {
+    position: fixed;
+    top: 20px; /* adjust according to your preference */
+    left: 20px; /* adjust according to your preference */
+    z-index: 9999; /* to ensure it appears on top of other content */
+  }

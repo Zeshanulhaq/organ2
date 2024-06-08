@@ -1,0 +1,32 @@
+/* Add your existing styles here */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+    border-radius:30px;
+}
+
+.header, .footer, .donor-section {
+    margin-bottom: 30px;
+}
+
+.image-container {
+    text-align: center;
+    font-size: 50px;
+}
+
+.story-image {
+    max-width: 30%;
+    height: auto;
+}
+
+.article-text, .quote, .solution-text, .inspiration-text, .champion-text {
+    margin-bottom: 10px;
+}
+.fa-home {
+    position: fixed;
+    top: 20px; /* adjust according to your preference */
+    left: 20px; /* adjust according to your preference */
+    z-index: 9999; /* to ensure it appears on top of other content */
+  }

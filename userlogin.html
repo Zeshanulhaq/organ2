@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+  <a href="home.html"><i class="fas fa-home"></i></a>
+<div id="main-container">
+    <div id="image-container">
+        <img src="./img/Rectangle.jpg" alt="Side Image">
+        <h1>Login Page</h1>
+    </div>
+    <div id="login-form-container">
+        <h1>Login Page</h1>
+        <form>
+            
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="button" class="btn example" onclick="login()"><b>Login</b></button>
+           
+        </form>
+        <p>Already have an account? <a href="signup.html">sign up</a></p>
+        <div>
+         
+          
+          <div class="modal">
+            <div class="modal-content">
+              <h3>Click Here to Register</h3>
+              <span class="close-button">&times;</span>
+              <a href="donor.html" target="_blank">Donor Profile</a><br>
+              <a href="patient.html" target="_blank">Patient Profile</a><br>
+              <a href="Hcp.html" target="_blank">Healthcare Profile</a><br>
+              <a href="donorpatient.html" target="_blank">Donor and Patient Profile</a><br>
+              <a href="registration3.html" target="_blank">Donor, Patient, and Healthcare Profile</a><br>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+</div>   
+
+    <script>
+     function login() {
+        console.log("Login button clicked!");
+        document.getElementById('registration-forms').style.display = 'block';
+    }
+ 
+     let modal = document.querySelector(".modal");
+      let trigger = document.querySelector(".example");
+      let closeButton = document.querySelector(".close-button");
+      function toggleModal() {
+        modal.classList.toggle("show-modal");
+      }
+      function windowOnClick(event) {
+         if(event.target === modal){
+          toggleModal();
+        }
+      }
+      trigger.addEventListener("click", toggleModal);
+      closeButton.addEventListener("click", toggleModal);
+      window.addEventListener("click", windowOnClick);
+    </script>
+ </body>
+ </html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style_login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <a href="home.html"><i class="fas fa-home"></i></a>
+    <div id="main-container">
+      <div id="image-container">
+        <img src="./img/Rectangle.jpg" alt="Side Image" />
+        <h1>Login Page</h1>
+      </div>
+      <div id="login-form-container">
+        <h1>Login Page</h1>
+        <form id="login-form" method="post" action="userlogin.php">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit"><b>Login</b></button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </div>
+    <script>
+      // You can remove the JavaScript related to the modal since it's not directly related to login functionality.
+    </script>
+  </body>
+</html>

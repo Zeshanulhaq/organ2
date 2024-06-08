@@ -1,0 +1,37 @@
+.container {
+    max-width: 90%;
+    height: 500px; /* Adjust the height as needed */
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background:linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+}
+
+label {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+textarea {
+    width: 90%;
+    height:120px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(235, 118, 235);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#notificationStatus {
+    margin-top: 20px;
+}

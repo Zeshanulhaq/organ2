@@ -1,0 +1,197 @@
+.desktop-10-child {
+    position: absolute;
+    top: 645px;
+    left: 100px;
+    width: 1287px;
+    height: 853px;
+}
+.desktop-10-item {
+    position: absolute;
+    top: 67px;
+    left: 53px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    box-sizing: border-box;
+    width: 1334px;
+    height: 1431px;
+    opacity: 0.3;
+}
+.who-can-become {
+    margin: 0;
+}
+.who-can-become-container1 {
+    width: 100%;
+}
+.who-can-become-container {
+    position: absolute;
+    top: 2200px;
+    left: 216px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    width: 2000px;
+    height: 2311px;
+}
+.who-can-become1 {
+    position: absolute;
+    top: 128px;
+    left: 119px;
+    font-size: 64px;
+    font-weight: 600;
+}
+.organ-donation-and1 {
+    position: absolute;
+    top: 316px;
+    left: 119px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.anyone-can-register-container {
+    position: absolute;
+    top: 387px;
+    left: 119px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    width: 669px;
+}
+.specialist-healthcare-professi-container {
+    position: absolute;
+    top: 519px;
+    left: 119px;
+    font-weight: 300;
+}
+.age-limit1 {
+    position: absolute;
+    top: 582px;
+    left: 119px;
+    font-size: 24px;
+}
+.no-age-limit {
+    margin-bottom: 0px;
+}
+.no-age-limit-for-registering-a {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 27px;
+}
+.no-age-limit-container {
+    position: absolute;
+    top: 625px;
+    left: 100px;
+    font-weight: 300;
+}
+.medical-conditions1 {
+    position: absolute;
+    top: 699px;
+    left: 119px;
+    font-size: 24px;
+}
+.most-illnesses-dont-container {
+    position: absolute;
+    top: 742px;
+    left: 100px;
+    font-weight: 300;
+}
+.exclusions {
+    position: absolute;
+    top: 807px;
+    left: 119px;
+    font-size: 24px;
+}
+.certain-conditions-like-container {
+    position: absolute;
+    top: 852px;
+    left: 102px;
+    font-weight: 300;
+}
+.screening-process {
+    position: absolute;
+    top: 915px;
+    left: 119px;
+    font-size: 24px;
+}
+.blood-tests-rule-container {
+    position: absolute;
+    top: 958px;
+    left: 100px;
+    font-weight: 300;
+}
+.cancer-history {
+    position: absolute;
+    top: 1021px;
+    left: 119px;
+    font-size: 24px;
+}
+.active-cancer-patients-container {
+    position: absolute;
+    top: 1064px;
+    left: 102px;
+    font-weight: 300;
+}
+.desktop-10-inner {
+    position: absolute;
+    top: 219px;
+    left: 803px;
+    width: 557px;
+    height: 535px;
+    object-fit: cover;
+     border-radius:50% ;
+}
+.lifestyle-choices1 {
+    position: absolute;
+    top: 1127px;
+    left: 119px;
+    font-size: 24px;
+}
+.smoking-and-drinking-container {
+    position: absolute;
+    top: 1170px;
+    left: 102px;
+    font-weight: 300;
+}
+.ethnicity-and-matching {
+    position: absolute;
+    top: 1233px;
+    left: 119px;
+    font-size: 24px;
+}
+.diversity-in-donors-container {
+    position: absolute;
+    top: 1276px;
+    left: 100px;
+    font-weight: 300;
+}
+.non-blood-donors1 {
+    position: absolute;
+    top: 1339px;
+    left: 119px;
+    font-size: 24px;
+}
+.inability-to-donate-container {
+    position: absolute;
+    top: 1382px;
+    left: 100px;
+    font-weight: 300;
+}
+.desktop-10 {
+    width: 100%;
+    position: relative;
+    background-color: #d6c5f8;
+    border: 1px solid #f5f5f5;
+    box-sizing: border-box;
+    height: 1566px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    font-family: Mulish;
+}
+.fa-home {
+    position: fixed;
+    top: 20px; /* adjust according to your preference */
+    left: 20px; /* adjust according to your preference */
+    z-index: 9999; /* to ensure it appears on top of other content */
+  }

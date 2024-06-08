@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 30px;
+}
+
+#image-container {
+    text-align: center; /* Center the content horizontally */
+    
+}
+
+#image-container img {
+    max-width: 30%;
+    max-height: 30%; /* Ensure the image doesn't exceed the container height */
+    border-radius: 40px;
+    text-align: center;
+}
+
+#Contact-form-container {
+    /* background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 40px;
+    height: 560px;
+    width: 100px;
+}
+
+
+form {
+    width: 300px;
+    max-width: 450px;
+    text-align: center;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea{
+    resize:vertical;
+    padding: 10px;
+    width: 100%;
+    height: 30%;
+    border-radius:4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+button {
+    width: 100%;
+    padding: 20px;
+    background:linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+    color:black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color:#8b3d73;
+}
+.fa-home {
+    position: fixed;
+    top: 20px; /* adjust according to your preference */
+    left: 20px; /* adjust according to your preference */
+    z-index: 9999; /* to ensure it appears on top of other content */
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Professional Message Box</title>
+    <link rel="stylesheet" href="notification_style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Send Notification</h2>
+        <form id="notificationForm">
+            <label for="recipientType">Recipient Type:</label>
+            <select id="recipientType">
+                <option value="patient">Patient</option>
+                <option value="donor">Donor</option>
+                <option value="Both">Both</option>
+
+            </select><br>
+            <!-- <label for="recipient">Recipient:</label>
+            <select id="recipient">
+                
+            </select><br> -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="4" cols="50"></textarea><br>
+            <button type="button" id="sendNotification">Send Notification</button>
+        </form>
+        <div id="notificationStatus"></div>
+    </div>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to fetch recipients based on recipient type
+    function fetchRecipients(recipientType) {
+        var recipientSelect = document.getElementById('recipient');
+        // Clear existing options
+        recipientSelect.innerHTML = '';
+
+        // Make AJAX request to fetch recipients based on recipientType
+        // Example:
+        // var recipients = ['Recipient 1', 'Recipient 2', 'Recipient 3'];
+        // recipients.forEach(function(recipient) {
+        //     var option = document.createElement('option');
+        //     option.text = recipient;
+        //     option.value = recipient;
+        //     recipientSelect.add(option);
+        // });
+    }
+
+    // Fetch recipients when recipient type changes
+    document.getElementById('recipientType').addEventListener('change', function() {
+        var recipientType = this.value;
+        fetchRecipients(recipientType);
+    });
+
+    // Function to send notification
+    function sendNotification(recipient, message) {
+        // Send notification data to server using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'send_notification.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    document.getElementById('notificationStatus').innerHTML = xhr.responseText;
+                } else {
+                    document.getElementById('notificationStatus').innerHTML = 'Error: ' + xhr.status;
+                }
+            }
+        };
+        xhr.send('recipient=' + encodeURIComponent(recipient) + '&message=' + encodeURIComponent(message));
+    }
+
+    // Event listener for sending notification
+    document.getElementById('sendNotification').addEventListener('click', function() {
+        var recipient = document.getElementById('recipient').value;
+        var message = document.getElementById('message').value;
+        sendNotification(recipient, message);
+    });
+});
+
+    </script>
+</body>
+</html>

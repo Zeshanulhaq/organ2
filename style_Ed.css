@@ -1,0 +1,110 @@
+.desktop-11-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #e8b7fa 33%);
+    width: 1440px;
+    height: 1024px;
+}
+.educational-module {
+    position: absolute;
+    top: 25px;
+    left: 363px;
+    font-size: 64px;
+}
+.what-is-organ {
+    position: absolute;
+    top: 170px;
+    left: 48px;
+    font-size: 36px;
+}
+.organ-donation-is {
+    margin: 0;
+}
+.organ-donation-is-container {
+    position: absolute;
+    top: 236px;
+    left: 48px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.desktop-11-item {
+    position: absolute;
+    top: 368px;
+    left: 67px;
+    width: 615px;
+    height: 608px;
+    cursor: pointer;
+}
+.desktop-11-inner {
+    position: absolute;
+    top: 368px;
+    left: 164px;
+    width: 422px;
+    height: 498px;
+    object-fit: cover;
+}
+.who-can-donate {
+    position: absolute;
+    top: 894px;
+    left: 194px;
+    font-weight: 600;
+}
+.line-div {
+    position: absolute;
+    top: 933.5px;
+    left: 193.5px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 363px;
+    height: 1px;
+}
+.rectangle-icon {
+    position: absolute;
+    top: 366px;
+    left: 745px;
+    width: 615px;
+    height: 608px;
+    cursor: pointer;
+}
+.desktop-11-child1 {
+    position: absolute;
+    top: 366px;
+    left: 867px;
+    width: 372px;
+    height: 498px;
+    object-fit: cover;
+}
+.stories-of-hope-container {
+    position: absolute;
+    top: 896px;
+    left: 937px;
+    font-weight: 600;
+}
+.desktop-11-child2 {
+    position: absolute;
+    top: 931.5px;
+    left: 936.5px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 232px;
+    height: 1px;
+}
+.desktop-11 {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(77.63deg, rgba(246, 191, 248, 0), #f6b8f8 30.54%);
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: Mulish;
+}
+.fa-home {
+    position: fixed;
+    top: 20px; /* adjust according to your preference */
+    left: 20px; /* adjust according to your preference */
+    z-index: 9999; /* to ensure it appears on top of other content */
+}
+  

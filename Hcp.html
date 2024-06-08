@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Professional Registration Form</title>
+    <link rel="stylesheet" href="style_Hcp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <a href="home.html"><i class="fas fa-home"></i></a>
+    <section class="container">
+        
+        <header>Healthcare Professional Registration Form</header>
+        <form action="Hcp.php" method="post" class="form">
+            <div class="input-box">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Enter full name" required />
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required />
+            </div>
+            
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+            </div>
+            
+            <div class="input-box">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Phone number" required/>
+            </div>
+
+            <div class="input-box">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="City" required />
+            </div>
+            
+            <div class="input-box">
+                <label for="age">Age</label>
+                <input type="date" id="age" name="age" placeholder="Enter your date of birth" required />
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="Male" checked />
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="Female" />
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" value="Other" />
+                        <label for="check-other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box specialization">
+                <label for="specialization"><b>Specialization</b></label>
+                <input type="text" id="specialization" name="specialization" placeholder="Enter your specialization" required />
+            </div>
+
+            <div class="input-box experience">
+                <label for="year_of_experience"><b>Years of Experience</b></label>
+                <input type="number" id="year_of_experience" name="year_of_experience" placeholder="Enter your years of experience" required />
+            </div>
+
+            <div class="input-box hospital">
+                <label for="hospital_name"><b>Hospital Name</b></label>
+                <input type="text" id="hospital_name" name="hospital_name" placeholder="Enter your hospital name" required />
+            </div>
+
+            <div class="input-box license">
+                <label for="medical_license_ID"><b>Medical License ID</b></label>
+                <input type="text" id="medical_license_ID" name="medical_license_ID" placeholder="Enter your medical license ID" required />
+            </div>
+        
+
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+</body>
+</html>

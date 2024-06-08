@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lifeconnect Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <ul class="menu">
+          <li class="active">
+            <a href="#" onclick="showDashboard()">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <!-- Other menu items -->
+          <li class="logout">
+            <a href="adminlogout.php">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main--content">
+      <div class="header--wrapper">
+        <div class="header--title">
+          <span>Primary</span>
+          <h2>Dashboard</h2>
+        </div>
+        <div class="user--info">
+          <div class="search--box">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <!-- Placeholder for dynamic content -->
+      <div class="content--placeholder">
+        <!-- Existing content here -->
+      </div>
+
+      <!-- User Information Section -->
+      <div id="user-info">
+        <h3 class="main--title">User Information</h3>
+        <div class="user--details">
+          <p><strong>Name:</strong> <span id="user-fullname"></span></p>
+          <p><strong>Email:</strong> <span id="user-email"></span></p>
+          <p><strong>User Type:</strong> <span id="user-type"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showDashboard() {
+        // Fetch user information and display it
+        fetch("get_user_info.php")
+          .then(response => response.json())
+          .then(data => {
+            if (data.error) {
+              alert(data.error);
+            } else {
+              document.getElementById("user-fullname").innerText =
+                data.fullname;
+              document.getElementById("user-email").innerText = data.email;
+              document.getElementById("user-type").innerText = data.user_type;
+            }
+          })
+          .catch(error =>
+            console.error("Error fetching user information:", error)
+          );
+      }
+
+      // Load the dashboard content when the page is loaded
+      document.addEventListener("DOMContentLoaded", showDashboard);
+    </script>
+  </body>
+</html>
