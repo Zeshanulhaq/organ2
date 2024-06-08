@@ -10,38 +10,40 @@ body {
   }
   
   .container {
-    width: 40%;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
+    width: 370px;
+    max-width: 600px;
     color: black;
-
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
   }
   
   form {
-    border: 1px solid gray;
-    padding: 60px;
-    background-color: #fff;
-    height: 400px;
-    border-radius: 30px;
-    
+    margin-top: 2rem;
   }
   
   h2 {
-    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  p {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin: 0;
+    margin-top: 6px;
   }
   
   .form-group {
-    margin-bottom: 15px;
-    width: 470px;
-    max-width: 600px;
+    margin-bottom: 1rem;
+    /* width: 470px; */
+    /* max-width: 600px; */
     text-align: center;
     color: black;
-    padding:10px;
-
-
+    /* padding:10px; */
   }
   label {
+    font-size: 13px;
     display: block;
     margin-bottom: 5px;
     text-align: left;
@@ -49,11 +51,12 @@ body {
   input[type="text"],
   input[type="email"],
   input[type="password"] {
-    width: 92%;
-    padding: 15px;
+    width: 96%;
+    padding-block: 10px; 
+    padding-left: 10px;
     border-radius: 5px;
     border: 1px solid gray;
-    margin-left: -23px;
+    /* margin-left: -23px; */
 
   }
 
@@ -72,12 +75,12 @@ body {
   button:hover {
     background-color: #680657;
   }
-  
-  p {
-    margin-top: 15px;
-    text-align: center;
-  }
+
   .bloodgroup{
     padding: 10px;
   }
   
+  select {
+    padding: .4rem 1rem ;
+    width: 80% ;
+  }

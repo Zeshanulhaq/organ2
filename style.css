@@ -82,7 +82,7 @@ body {
 
 .main--content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 1rem;
     background: rgb(243, 238, 229);
     width: 100%;

@@ -8,6 +8,80 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .btn {
+        padding: 5px 10px;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #45a049;
+      }
+      .pagination-btn {
+        align-items: center;
+        background-clip: padding-box;
+        background-color: #d1b0ed;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: system-ui, -apple-system, system-ui, "Helvetica Neue",
+          Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 1.25;
+        margin: 0;
+        min-height: 3rem;
+        padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+        position: relative;
+        text-decoration: none;
+        transition: all 250ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        width: auto;
+      }
+
+      .pagination-btn:hover,
+      .pagination-btn:focus {
+        background-color: #d1b0ed;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      }
+
+      .pagination-btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .pagination-btn:active {
+        background-color: #d1b0ed;
+        box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+        transform: translateY(0);
+      }
+    </style>
   </head>
   <body>
     <div class="sidebar">
@@ -53,10 +127,13 @@
       </div>
     </div>
 
-    <div class="main--content">
-      <div class="header--wrapper">
+    <div class="main--content" style="padding-inline: 2rem">
+      <div
+        class="header--wrapper"
+        style="display: flex; justify-content: space-between"
+      >
         <div class="header--title">
-          <span>Primary</span>
+          <!-- <span>Primary</span> -->
           <h2>Dashboard</h2>
         </div>
         <div class="user--info">
@@ -74,7 +151,7 @@
       </div>
 
       <!-- Placeholder for user list -->
-      <div id="user-list" style="display: none">
+      <div id="user-list">
         <h3 class="main--title">All Users</h3>
         <div class="user--wrapper">
           <table border="1">
@@ -91,10 +168,20 @@
             </tbody>
           </table>
         </div>
-        <div class="pagination">
-          <button id="prev-page" disabled>Previous</button>
-          <span id="page-info"></span>
-          <button id="next-page">Next</button>
+        <div
+          class="pagination"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 12px;
+          "
+        >
+          <button id="prev-page" class="pagination-btn">Previous</button>
+
+          <span id="page-info" style="font-size: 1rem; font-weight: 600"></span>
+          <button id="next-page" class="pagination-btn">Next</button>
         </div>
       </div>
     </div>
@@ -127,12 +214,12 @@
 
       function fetchUsers(page, limit) {
         fetch(`fetch_users.php?page=${page}&limit=${limit}`)
-          .then(response => response.json())
-          .then(data => {
+          .then((response) => response.json())
+          .then((data) => {
             const userTableBody = document.getElementById("user-table-body");
             userTableBody.innerHTML = ""; // Clear any existing data
 
-            data.users.forEach(user => {
+            data.users.forEach((user) => {
               const row = document.createElement("tr");
               row.innerHTML = `
                             <td>${user.fullname}</td>
@@ -155,7 +242,7 @@
             document.getElementById("next-page").disabled =
               data.page >= Math.ceil(data.total / data.limit);
           })
-          .catch(error => console.error("Error fetching user data:", error));
+          .catch((error) => console.error("Error fetching user data:", error));
       }
 
       function deleteUser(userId) {
@@ -164,8 +251,8 @@
           fetch("delete_user.php?id=" + userId, {
             method: "DELETE",
           })
-            .then(response => response.json())
-            .then(data => {
+            .then((response) => response.json())
+            .then((data) => {
               if (data.success) {
                 alert("User deleted successfully.");
                 fetchUsers(currentPage, limit);
@@ -173,7 +260,7 @@
                 alert("Failed to delete user: " + data.error);
               }
             })
-            .catch(error => console.error("Error deleting user:", error));
+            .catch((error) => console.error("Error deleting user:", error));
         }
       }
     </script>
