@@ -86,25 +86,25 @@
     />
   </head>
   <body>
-    <a href="home.html"><i class="fas fa-home"></i></a>
-    <div id="main-container">
-      <div id="image-container">
-        <img src="./img/Rectangle.jpg" alt="Side Image" />
-        <h1>Login Page</h1>
-      </div>
-      <div id="login-form-container">
-        <h1>Login Page</h1>
-        <form id="login-form" method="post" action="userlogin.php">
-          <label for="email">Email Address:</label>
+    <!-- <a href="home.html"><i class="fas fa-home"></i></a> -->
+    <div id="main-container" class="container">
+      <h2>Login</h2>
+      <p>Enter your email below to login to your account.</p>
+      <form id="login-form" method="post" action="userlogin.php">
+        <div class="form-group">
+          <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
-
+        </div>
+        <div class="form-group">
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required />
+        </div>
 
-          <button type="submit"><b>Login</b></button>
-        </form>
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-      </div>
+        <button type="submit"><b>Login</b></button>
+      </form>
+      <p style="text-align: center; margin-top: 1rem">
+        Don't have an account? <a href="signup.html">Sign up</a>
+      </p>
     </div>
     <script>
       // You can remove the JavaScript related to the modal since it's not directly related to login functionality.
