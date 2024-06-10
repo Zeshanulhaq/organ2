@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute SQL statement
     if ($stmt->execute()) {
-        echo "User registered successfully";
+        header("Location: userlogin.html");
     } else {
         echo "Error: " . $stmt->error;
     }
