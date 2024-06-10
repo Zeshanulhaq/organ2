@@ -15,114 +15,62 @@ body {
 
 .child {
   width: 90%;
-  background:linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #d6c5f8, #e8b7fa 33%); 
+  /* background:linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #d6c5f8, #e8b7fa 33%);  */
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   height:90%;
   border-radius: 30px;
 
 }
-.login-btn {
-  position: absolute;
-  top: 33px;
-  left: 85%;
-  /* background-color: #007bff; */
-  color: #0e0c0c;
-  padding:6px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 60px;
-  align-items: center;
-  display: flex;
-}
-.login-btn img {
-  width: 50px; /* Adjust the width as needed */
-  height: 50px; /* Maintain aspect ratio */
-  border-radius:30px;
-  margin-right:5px ;
-  margin-bottom:28px;
-  margin-top:29px;
-
-}
-
 
 .header {
   display: flex;
   justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 2rem;
   align-items: center;
-  width:55px;
-  height: 50px;
-  padding:35px;
-  text-align: center;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-}
-
-.lifeconnect {
-  font-size: 1.5em;
-  font-weight: 700;
-  margin-top:50%;
-}
-
-.navbar {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 10px;
 }
 
-.navbar ul {
-  list-style: none;
-  padding: 30px;
-  margin: 0;
+.logo {
   display: flex;
-  width:40px;
-  height:40px;
-  font-size: large;
-  padding-left: 100px;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .navbar li {
-  margin-right: 20px;
-  font-size: large;
-  justify-content: center;
-  padding-left:20px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: black;
-  height: 20px;
-  width:20px;
-  justify-content: space-between;
-  cursor:pointer;
-  text-align: 40px;
-  align-items: center;
-  padding-left:-100px;
-}
-
-.nav-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom:-60px;
-  margin-left:-45px;
-  margin-right:35px;
-  margin-top:-100px;
-  padding: 50px;
-  padding-right:50px;
+  list-style: none;
+  padding: .5rem 1rem;
+  border-radius: 30px;
+  }
   
+  .navbar li:hover {
+  background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #d6c5f8, #e8b7fa 33%);
+}
+.navbar ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
 }
 
 .content {
-  margin-top: 20px;
+  margin-top: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-left:10px;
   padding-left:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .guardian-heading {
@@ -148,35 +96,38 @@ body {
 
 
 
-button {
-  background-color:black;
+.login-button {
+  background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #d6c5f8, #e8b7fa 33%);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 
+.btn-invert {
+  background-color:#fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-invert:hover {
+  border: 1px solid #fff;
+  background: transparent;
+}
 button:hover {
-  background-color: #b392a8; /* Adjust hover background color as needed */
+  background: linear-gradient(180deg, #d362fb, #bdaae3 0.01%, #d6c5f8, #e8b7fa 33%);
 }
 
-.image-section {
-  
-  margin-left: 860px;
-  margin-bottom:1100px;
-  margin-top:-310px;
-  display:flex;
-  justify-content: center;
-  width:370px;
-  height:390px;
-  border-radius:10px;
-}
 
 .right-image {
   width: 100%;
-  height: auto;
+  height: 30rem;
   border-radius: 10px;
 }
 /* CSS for the dialog box */
