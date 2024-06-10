@@ -34,6 +34,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['email'] = $email;
         $_SESSION['user_type'] = $user_type;
         header("Location: userdashboard.html");
+        // Redirect based on user type
+        // switch ($user_type) {
+        //     case 'patient':
+        //         header("Location: Patient.html");
+        //         break;
+        //     case 'donor':
+        //         header("Location: donor.html");
+        //         break;
+        //     case 'healthcare':
+        //         header("Location: healthcare.html");
+        //         break;
+        //     default:
+        //         header("Location: userdashboard.html");
+        //         break;
+        // }
+        exit(); // Ensure the script stops executing after the redirect
     } else {
         echo "Invalid email or password";
     }
